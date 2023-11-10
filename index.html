@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>音楽検索サイト</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8">
+    <style>
+      /* アニメーションのスタイル */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* アニメーションを適用する要素のスタイル */
+      .animate-h1 {
+        animation: fadeIn 2s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="animate-h1">音楽検索</h1>
+    <div class="wrap">
+      <input type="text" name="keyword" id="keywordInput" placeholder="キーワードを入力してください" />
+      <button onclick="search()" class="button">検索</button>
+    </div>
+    <div id="results"></div>
+    <script src="script.js" defer></script> </body>
+    <div class="loading">
+  <span class="circle"></span>
+</div>
+</html>
